@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Productivity Dashboard</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<header class="header">
+
+    <div class="brand">
+
+        <div class="logo">
+
+            <i class="fa-solid fa-graduation-cap"></i>
+
+        </div>
+
+        <div class="brand-text">
+
+            <h1>Student Productivity Dashboard</h1>
+
+            <p>Organize • Focus • Grow</p>
+
+        </div>
+
+    </div>
+
+    <button id="themeToggle">
+
+        <i class="fa-solid fa-moon"></i>
+
+    </button>
+
+</header>
+
+<section class="hero">
+
+    <div class="hero-left">
+
+        <span class="badge">
+
+            Productivity Dashboard
+
+        </span>
+
+        <h2 id="greeting">
+
+            Good Morning, Fatimah 👋
+
+        </h2>
+
+        <p id="todayDate">
+
+            Friday, 3 July 2026
+
+        </p>
+
+        <div class="goal">
+
+            <i class="fa-solid fa-bullseye"></i>
+
+            <span>
+
+                Today's Goal :
+                Finish Coding Camp Project
+
+            </span>
+
+        </div>
+
+    </div>
+
+    <div class="hero-right">
+
+        <div class="clock-card">
+
+            <small>
+
+                Current Time
+
+            </small>
+
+            <h2 id="clock">
+
+                09:30:00
+
+            </h2>
+
+        </div>
+
+    </div>
+
+</section>
+
+<main class="dashboard">
+
+<div class="left-column">
+
+<section class="card timer-card">
+
+<h3>
+
+<i class="fa-solid fa-stopwatch"></i>
+
+Focus Timer
+
+</h3>
+
+<div class="timer-circle">
+
+<h1 id="timer">
+
+25:00
+
+</h1>
+
+</div>
+
+<div class="timer-buttons">
+
+<button id="startBtn">
+
+Start
+
+</button>
+
+<button id="pauseBtn">
+
+Pause
+
+</button>
+
+<button id="resetBtn">
+
+Reset
+
+</button>
+
+</div>
+
+</section>
+<section class="card progress-card">
+
+    <div class="progress-header">
+
+        <div>
+
+            <h3>
+
+                <i class="fa-solid fa-chart-line"></i>
+
+                Today's Progress
+
+            </h3>
+
+            <p>
+
+                Track your completed tasks today.
+
+            </p>
+
+        </div>
+
+        <span id="progressPercent">
+
+            0%
+
+        </span>
+
+    </div>
+
+    <div class="progress-bar">
+
+        <div id="progressFill"></div>
+
+    </div>
+
+    <p id="progressText">
+
+        0 of 0 tasks completed
+
+    </p>
+
+</section>
+
+</div>
+
+<div class="right-column">
+
+<section class="card todo-card">
+
+    <div class="card-header">
+
+        <h3>
+
+            <i class="fa-solid fa-list-check"></i>
+
+            Today's Tasks
+
+        </h3>
+
+        <span>
+
+            Daily Planner
+
+        </span>
+
+    </div>
+
+    <div class="todo-input">
+
+        <input
+
+            type="text"
+
+            id="taskInput"
+
+            placeholder="Add your task...">
+
+        <button id="addTask">
+
+            <i class="fa-solid fa-plus"></i>
+
+        </button>
+
+    </div>
+
+    <ul id="taskList">
+
+    </ul>
+
+</section>
+
+<section class="card links-card">
+
+    <div class="card-header">
+
+        <h3>
+
+            <i class="fa-solid fa-link"></i>
+
+            Quick Links
+
+        </h3>
+
+        <button id="addLink">
+
+            +
+
+        </button>
+
+    </div>
+
+    <div id="quickLinks">
+
+        <a href="https://github.com" target="_blank">
+
+            <i class="fa-brands fa-github"></i>
+
+            <span>GitHub</span>
+
+        </a>
+
+        <a href="https://mail.google.com" target="_blank">
+
+            <i class="fa-solid fa-envelope"></i>
+
+            <span>Gmail</span>
+
+        </a>
+
+        <a href="https://youtube.com" target="_blank">
+
+            <i class="fa-brands fa-youtube"></i>
+
+            <span>YouTube</span>
+
+        </a>
+
+        <a href="https://www.notion.so" target="_blank">
+    <i class="fa-solid fa-book-open"></i>
+    <span>Notion</span>
+</a>
+
+    </div>
+
+</section>
+
+<section class="card quote-card">
+
+    <h3>
+
+        <i class="fa-solid fa-quote-left"></i>
+
+        Daily Motivation
+
+    </h3>
+
+    <blockquote id="quote">
+
+        "Small progress is still progress."
+
+    </blockquote>
+
+</section>
+
+</div>
+
+</main>
+
+<footer>
+
+    <p>
+
+       © 2026 Fatimah Azzahra · Student Productivity Dashboard
+
+    </p>
+
+</footer>
+
+</div>
+<div id="toast"></div>
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
